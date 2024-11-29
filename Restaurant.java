@@ -81,11 +81,22 @@ public class Restaurant{
 			}
 		} catch (Exception e) {
             		System.out.println("Il y a un souci : " + e.getMessage());
+			return; 
        		 }
 		this.reservationSalle.put(numTable, "Réservée");
 		System.out.println("La table " + numTable + " est " + this.reservationSalle.get(numTable));  
 
 
+
+	}
+
+	public void AfficherTablesReservees(){
+		System.out.println("les tables suivantes sont réservées : "); 
+		for(int i=0; i<this.reservationSalle.size(); i++){
+			if(this.reservationSalle.get(i)=="Réservée"){
+				System.out.println(i); 
+			}
+		}
 
 	}
 	

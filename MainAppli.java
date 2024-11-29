@@ -9,5 +9,7 @@ public class MainAppli{
 	laFourmiJoyeuse.reserverTable(3); 
 	System.out.println("On teste la réservation sur la table 256 "); 
 	laFourmiJoyeuse.reserverTable(256); 
+	laFourmiJoyeuse.AfficherTablesReservees(); 
+
     }
 }
